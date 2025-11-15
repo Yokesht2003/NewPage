@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    font-size: 1.2rem;
+    font-weight: 500px;
+    background: url(/IMAGE/img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.navbar {
+    padding: 14px;
+    background-color: cadetblue;
+    border-radius: 50px;
+    margin: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.links {
+    list-style-type: none;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+    transition: color 0.5s ease;
+}
+
+.links li a:hover {
+    color: rgb(16, 15, 15)
+}
+
+.links {
+    display: flex;
+}
+
+.login a {
+    font-weight: 600;
+    text-decoration: none;
+}
+.login a:hover{
+color: #32773b;
+}
+
+.login a {
+    transition: color 2s ease;
+}
+
+.login {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.3rem 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+.sign a {
+    font-weight: 600;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sign {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.3rem 13px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* Main Page*/
+
+.intro {
+    display: inline-block;
+    margin-top: 15%;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+}
+
+.intro span {
+    color: rgb(80, 138, 255);
+    transition: color 1s ease;
+}
+
+.intro span:hover {
+    color: rgb(23, 193, 14);
+}
+
+.java-logo:hover {
+    box-shadow: -5px -5px -23px greenyellow,
+        5px 5px 23px rebeccapurple
+}
+
+.image {
+    position: absolute;
+}
+
+.email {
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.email button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 1.2s ease;
+}
+
+.email button:hover {
+    color: aliceblue;
+    box-shadow: inset 0 -100px 0 0 black;
+    ;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.fa-brands fa-youtube {
+    font-size: 50px;
+}
+
+/*Social media*/
+
+.container {
+    position: fixed;
+    /* stays at bottom */
+    bottom: 25px;
+    /* distance from bottom */
+    left: 50%;
+    /* center horizontally */
+    transform: translateX(-50%);
+    display: flex;
+    gap: 17px;
+    /* spacing between icons */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.container .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    margin: 0 20px;
+    transition: all 0.5 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .icon span {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background-color: #d2dae2;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.container .icon span i {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.container .icon:hover span i {
+    color: #d2dae2; 
+} 
+
+.container .icon .tooltip {
+    background-color: #d2dae2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color:white;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.container .icon .tooltip::before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    bottom: -8px;
+    background-color: #d2dae2;
+    left: 50px;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.5 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container.icon:hover span,
+.container.icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.container .Facebook:hover span,
+.container .Facebook:hover .tooltip,
+.container .Facebook:hover .tooltip::before {
+    background-color: #983b69;
+}
+
+.container .Instagram:hover span,
+.container .Instagram:hover .tooltip,
+.container .Instagram:hover .tooltip::before {
+    background-color: #3b9843;
+}
+
+.container .whatsapp:hover span,
+.container .whatsapp:hover .tooltip,
+.container .whatsapp:hover .tooltip::before {
+    background-color: #83761e;
+}
+
+.container .youtube:hover span,
+.container .youtube:hover .tooltip,
+.container .youtube:hover .tooltip::before {
+    background-color: #983b3b;
+}
+
+.container .Github:hover span,
+.container .Github:hover .tooltip,
+.container .Github:hover .tooltip::before {
+    background-color: #3b5998;
+}
