@@ -326,11 +326,14 @@ button:active {
 
     /* Social icons move up */
     .container {
-        bottom: 10px;
-        padding: 0px 20px;
+        bottom: 15px;
+        left: 50%;
         transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 10px;        /* Reduce gap */
+        width: 100%;
     }
-
 
     /* --------------- HAMBURGER MENU --------------- */
     .hamburger {
