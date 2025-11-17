@@ -269,7 +269,7 @@ button:active {
 /* -----------------------------------------
    MOBILE VIEW (Max width: 768px)
 ----------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     /* Desktop hide hamburger */
 .hamburger {
     display: none;
